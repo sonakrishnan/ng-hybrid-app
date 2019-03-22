@@ -1,0 +1,26 @@
+<h3>AngularJS Sample Application</h3>
+
+<div ng-controller="sampleController">
+   <form>
+      <div class="form-group">
+         <label>First Name</label>
+         <input type="text" class="form-control txt-box" ng-model="student.firstName">
+      </div>
+      <div class="form-group">
+         <label>Last Name</label>
+         <input type="text" class="form-control txt-box" ng-model="student.lastName">
+      </div>
+   </form>
+   You are entering: <b>{{student.fullName()}}</b>
+</div>
+<h3>Below is a downgraded Angular Component</h3>
+<div class="alert alert-success">
+   <angular-component></angular-component> 
+</div>
+
+<style>
+   .txt-box,
+   .alert-success {
+      width: 25%;
+   }
+</style>
